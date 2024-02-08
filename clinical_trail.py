@@ -67,7 +67,7 @@ q5_descrpt='''
     '''
 st.markdown(q5_descrpt,unsafe_allow_html=True)
 st.write(' ')
-user_option=st.selectbox('আপনি কি আপনার বর্তমান মুখের ছবি দিতে আগ্রহী?',[' ','হ্যাঁ','না'])
+user_option=st.selectbox('আপনি কি আপনার বর্তমান মুখের ছবি দিতে আগ্রহী?',['হ্যাঁ','না'])
 if user_option=='হ্যাঁ':
     uploaded_image = st.file_uploader("একটি ছবি চয়ন করুন...", type=["jpg", "jpeg", "png"])
 
@@ -117,8 +117,7 @@ elif user_option=='না':
     q6=st.selectbox('রোগীর মুখের দুর্বলতা আছে কি?',['স্বাভাবিক', 'অস্বাভাবিক'])
     st.markdown(q6_descrpt,unsafe_allow_html=True)
     st.write(' ')
-else:
-    pass
+
 st.write(' ')
 q7=st.selectbox('রোগী কথা বলতে পারছে কি এবং রোগীকে ৩ টি সাধারণ জিনিসের নাম বলতে বলুন', ['স্বাভাবিক', 'অস্বাভাবিক'])
 q7_descrpt='''
